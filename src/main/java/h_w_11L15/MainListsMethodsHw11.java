@@ -43,6 +43,10 @@ public class MainListsMethodsHw11 {
         ComparatorsDoubleReverseHw11 compar1 = new ComparatorsDoubleReverseHw11();
         listD.sort(compar1);
         System.out.println(listD);
+
+        System.out.println();
+        System.out.println("=".repeat(65));
+        System.out.println();
 // ============================================================
         LinkedList<Integer> listInt = new LinkedList<>();
         listInt.add(12);

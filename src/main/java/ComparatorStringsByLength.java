@@ -26,6 +26,4 @@ public class ComparatorStringsByLength
         //return Integer.compare(len1,len2); это то же самое по сути универсальный метод
     }
 
-
-
 }

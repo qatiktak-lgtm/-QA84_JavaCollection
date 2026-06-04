@@ -34,29 +34,32 @@ public class MainListBooksHw {
         listHw13.add(b11);
         listHw13.add(b12);
 
-//        printBookLists(listHw13);
+        System.out.println("Unsorted list of books");
         printHwBookLists(listHw13);
 
+        System.out.println("Sort Books By Pages Reverse (100->0)");
         ComparatorBooksByPagesReverse compHw1 = new ComparatorBooksByPagesReverse();
         listHw13.sort(compHw1);
         printHwBookLists(listHw13);
 
+        System.out.println("Sort Books By Price (0.0 -> 100.0)");
         ComparatorBooksByPrice compHw2 = new ComparatorBooksByPrice();
         listHw13.sort(compHw2);
         printHwBookLists(listHw13);
 
+        System.out.println("Sort Books by Titles (A-Z)");
         ComparatorBooksByTitle compHw3 = new ComparatorBooksByTitle();
         listHw13.sort(compHw3);
         printHwBookLists(listHw13);
 
+        System.out.println("Sort Books by Title Reverse (Z-A)");
         ComparatorBooksByTitleReverse compHw4 = new ComparatorBooksByTitleReverse();
         listHw13.sort(compHw4);
         printHwBookLists(listHw13);
 
+        System.out.println("Sort Books by Author & Title");
         ComparatorBooksByAuthorTitle compHw5 = new ComparatorBooksByAuthorTitle();
         listHw13.sort(compHw5);
-//        ComparatorBooksByTitle compHw6 = new ComparatorBooksByTitle();
-//        listHw13.sort(compHw6);
         printHwBookLists(listHw13);
 
     }

@@ -27,7 +27,8 @@ public class hw_12Main {
         System.out.printf("Sort string \"by ABC\": " + listHw + "\n");
         System.out.println("=".repeat(80));
 
-
+//        klWrkComparStrByLrev comp2 = new klWrkComparStrByLrev();
+//        listHw.sort(new comp2());
 
     }
 }

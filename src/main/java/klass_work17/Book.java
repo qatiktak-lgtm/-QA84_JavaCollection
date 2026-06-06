@@ -59,12 +59,21 @@ public class Book implements Comparable<Book> {
     public int compareTo(Book other) {
         return this.author.compareToIgnoreCase(other.author);
     }
+/*
+Второй вариант: Двухуровневая сортировка
+@Override
+public int compareTo(Book other) {
+    int comp = this.author.compareToIgnoreCase(other.author);
+
+    // Если авторы ОДИНАКОВЫЕ (comp вернул 0), включается запасной критерий
+    if (comp == 0) {
+        comp = this.title.compareToIgnoreCase(other.title);
+    }
+    return comp;
+}
+ */
 
 
-//    @Override
-//    public int compareTo(Book other) {
-//        return this.author.compareToIgnoreCase(other.author);
-//    }
 
 
 }
